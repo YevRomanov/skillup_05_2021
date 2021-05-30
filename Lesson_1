@@ -1,0 +1,3 @@
+Some test data...
+git config --global user.email "yevromanov@gmail.com"
+git config --global user.name "yevromanov"
