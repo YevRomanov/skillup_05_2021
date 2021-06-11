@@ -1,13 +1,13 @@
 
-a = 6.57
-b = 3.4
-c = -1
+a = float(input())
+b = float(input())
+c = float(input())
 s = (a+b+c)
 print("Общая сумма:", s)
 
-a = 7.81
-b = 5.1
-c = -3.45
+a = float(input())
+b = float(input())
+c = float(input())
 p = (a*b*c)
 print("Общая произведение:", p)
 
