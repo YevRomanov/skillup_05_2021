@@ -1,13 +1,13 @@
 
-a = float(input())
-b = float(input())
-c = float(input())
+a = float(input("Enter first numer: "))
+b = float(input("Enter second numer: "))
+c = float(input("Enter third numer: "))
 s = (a+b+c)
-print("Общая сумма:", s)
+print("Total amount:", s)
 
-a = float(input())
-b = float(input())
-c = float(input())
+a = float(input("Enter first numer: "))
+b = float(input("Enter second numer: "))
+c = float(input("Enter third numer: "))
 p = (a*b*c)
-print("Общая произведение:", p)
+print("Total amount:", p)
 
