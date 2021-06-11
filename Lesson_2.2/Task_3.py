@@ -1,5 +1,5 @@
-Number_of_meters = float(input("Enter the number of meters")
-a = float(Number_of_meters)
-Number_of_kilometers = a/1000
-print(Number_of_kilometers)
+m = float(input("Enter the number of meters: "))
+km = m/1000
+mm = m*1000
+print("You have:", km, "kilometers" + " and", mm, "millimeters")
 
