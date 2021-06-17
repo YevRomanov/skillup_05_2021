@@ -60,6 +60,9 @@ for index, value in enumerate(range(10, 20)):
 
 
 # Особенность ф-и enumerate, которая позволяет изменить порядковый номер:
- t = ("apple", "banana", "mango")
-for index, value in enumerate(t):
+t = ("apple", "banana", "mango")
+for index, value in enumerate(t, 10):
     print(index, value)
+# 10 apple (вместо 0)
+# 11 banana (вместо 1)
+# 12 mango (вместо 2)
