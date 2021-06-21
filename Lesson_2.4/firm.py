@@ -31,7 +31,7 @@ pprint(workers_1)
 # 
 # 
 print("==================Поиск==================")
-search_person = input("Я ищу сотрудника, ФИО :")
-if search_person in workers_1.keys():
-    person = workers_1.get(search_person)
-    pprint("Данные сотрудника: ", )
+search_p = input("Я ищу сотрудника, ФИО :")
+if search_p in workers_1.keys():
+    person = workers_1.get(search_p)
+    print("Данные сотрудника:", {person[0]}, {person[1]}, {person[2]}, {person[3]}, {person[4]})
