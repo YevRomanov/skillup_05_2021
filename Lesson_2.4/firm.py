@@ -35,3 +35,5 @@ search_p = input("Я ищу сотрудника, ФИО :")
 if search_p in workers_1.keys():
     person = workers_1.get(search_p)
     print("Данные сотрудника:", {person[0]}, {person[1]}, {person[2]}, {person[3]}, {person[4]})
+else:
+    print("Данный сотрудник не найден в базе")
