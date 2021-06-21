@@ -40,4 +40,24 @@
 
 a = [1, 2, 3, 4]
 tpl = (1, 2, 3, 4)
-print(type(tpl))
+print(a.__sizeof__())
+print(tpl.__sizeof__())
+
+def get_user():
+    name = "Alex"
+    age = 27
+    admin = False
+    return name, age, admin
+
+user = get_user()
+print(user[0])
+print(user[1])
+print(user[2])
+
+user = ("Alex", 27, False)
+
+name = "Alex"
+if name in user:
+    print("Пользователь найден:", name)
+else:
+    print("Пользователь не найден")
