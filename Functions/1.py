@@ -115,7 +115,15 @@
 # pprint(players)
 
 
-def say_hello():
-    print("Hello")
+# def say_hello():
+#     print("Hello")
 
-say_hello()
+# say_hello()
+def foo():
+    def bar():
+        print("Ты красавчик!!!")
+    return bar()
+
+foo()
+
+
