@@ -126,4 +126,12 @@ def foo():
 
 foo()
 
+players = []
 
+def save_player(**kwargs):
+    players.append(kwargs)
+
+save_player(name="Jordan", age=12)
+save_player(name="Mike", heigh=215)
+
+print(players)
