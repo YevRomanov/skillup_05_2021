@@ -22,6 +22,7 @@
 
 # say('Vasya', 'Ivanov', 30)
 
+import time 
 
 def testTime(fn):
     def wrapper(*args):
@@ -29,4 +30,5 @@ def testTime(fn):
         fn(*args)
         dt = time.time() - st
         print(f"Время работы: {dt} сек")
+    return wrapper
 
