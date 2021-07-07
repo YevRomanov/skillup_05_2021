@@ -20,5 +20,17 @@ def canon(doc):
     print("I am Canon printer")
     print(f'Printing: {doc}')
 
-hp('Test text')
-canon('Test text_2')
+hp('Test_text')
+canon('Test_text1')
+# 
+# 
+# Connected to IP: 11.10.11.10:6699
+# I am HP printer
+# Printing: Test_text
+# Close connection...
+# Connected to IP: 11.11.10.11:7744
+# I am Canon printer
+# Printing: Test_text1
+# Close connection...
+# 
+# 
