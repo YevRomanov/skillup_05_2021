@@ -3,8 +3,18 @@
 # Если нет, то вывести несовпадающую строку из каждого файла.
 # 
 # 
-file_1 = open('Lesson_3.6/text1.txt', mode="r")
-file_2 = open('Lesson_3.6/text2.txt', mode="r")
-print(file_1)
+stream_1 = open('Lesson_3.6/text1.txt', mode="r")
+stream_2 = open('Lesson_3.6/text2.txt', mode="r")
+def compare(file_1, file_2):  
+    lines_1 = stream_1.readlines() 
+    lines_2 = stream_2.readlines() 
+    dif = []
+    for l in lines_1:
+        if l not lines_2:
+            dif.append(l)
+            return dif
+print(f'Mismatched strings: {compare(stream_1, stream_2)}')
+stream_1.close()
+stream_2.close()
 
 
