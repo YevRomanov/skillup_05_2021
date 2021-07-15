@@ -10,11 +10,26 @@ def compare(file_1, file_2):
     lines_2 = stream_2.readlines() 
     dif = []
     for l in lines_1:
-        if l not lines_2:
+        if l not in lines_2:
             dif.append(l)
             return dif
 print(f'Mismatched strings: {compare(stream_1, stream_2)}')
 stream_1.close()
 stream_2.close()
-
-
+# 
+# 
+# Mismatched strings: ["'''Today, Silicon Valley is still the home of the computer industry; \n"]
+# 
+# 
+# 
+# 
+# 
+#################   Task 2   #################  
+# Дан текстовый файл. Необходимо создать новый файл и записать в него следующую статистику по исходному файлу:
+# ■ Количество символов;
+# ■ Количество строк;
+# ■ Количество гласных букв;
+# ■ Количество согласных букв; ■ Количество цифр.
+# 
+# 
+text_file = 
