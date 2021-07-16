@@ -32,4 +32,31 @@ stream_2.close()
 # ■ Количество согласных букв; ■ Количество цифр.
 # 
 # 
-text_file = 
+letters_to_find = "aeiouy"
+
+file_1 = "Lesson_3.6/text3.txt"
+file_2 = "Lesson_3.6/text4.txt"
+
+def get_file_lines(filename: str) -> list:
+    with open(filename) as f:
+        return f.readlines()
+
+def count_vowels(source_list: list) -> int:
+
+
+file1_lines = get_file_lines(file_1)
+file2_lines = get_file_lines(file_2)
+
+
+
+
+#################   Task 3   ################# 
+# Дан текстовый файл. Удалить из него последнюю строку. Результат записать в другой файл.
+
+
+#################   Task 4   ################# 
+# Дан текстовый файл. Найти длину самой длинной строки.
+
+
+#################   Task 5   ################# 
+# Дан текстовый файл. Посчитать сколько раз в нем встречается заданное пользователем слово.
