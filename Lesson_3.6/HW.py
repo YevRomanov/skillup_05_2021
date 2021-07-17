@@ -127,8 +127,12 @@ with open("Lesson_3.6/text5.txt", mode = "a", encoding="utf-8") as file:
 # Дан текстовый файл. Посчитать сколько раз в нем встречается заданное пользователем слово.#
 # 
 # 
-file = open("Lesson_3.6/text6.txt", mode = "r", encoding="utf-8")
-print(file)
+file = open("Lesson_3.6/text6.txt")
+find_word = input("Enter your word: ")
+list_file = [line.strip() for line in file]  
+count_user_word = list_file.count(find_word)
+print('Number of user word in file:', count_user_word)  # количество вхождений пользовательского слова
+file.close()
     
 
 # find_word = input()
