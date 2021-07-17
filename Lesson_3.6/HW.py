@@ -3,6 +3,8 @@
 # Если нет, то вывести несовпадающую строку из каждого файла.
 # 
 # 
+from typing import List
+
 stream_1 = open('Lesson_3.6/text1.txt', mode="r")
 stream_2 = open('Lesson_3.6/text2.txt', mode="r")
 def compare(file_1, file_2):  
@@ -32,51 +34,56 @@ stream_2.close()
 # ■ Количество согласных букв; ■ Количество цифр.
 # 
 # 
-letters_to_find_1 = "aeiouy"
-letters_to_find_2 = "qwrtpsdfghjklzxcvbnm"
-digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+# letters_to_find_1 = "aeiouy"
+# letters_to_find_2 = "qwrtpsdfghjklzxcvbnm"
+# digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
-file_1 = "Lesson_3.6/text3.txt"
-file_2 = "Lesson_3.6/text4.txt"
+# file_1 = "Lesson_3.6/text3.txt"
+# file_2 = "Lesson_3.6/text4.txt"
 
-def get_file_lines(filename: str) -> list:
-    with open(filename) as f:
-        return f.readlines()
+# def get_file_lines(filename: str) -> list:
+#     with open(filename) as f:
+#         return f.readlines()
 
-def get_digits(filename: int) -> list:
-    with open(filename) as f:
-        return f.readlines()
+# def count_vowels(text: str) -> list:
+#     counter = 0
+#     for i in text:
+#         if i in letters_to_find_1:
+#             counter += 1 
+#     return counter
 
-def count_vowels(text: str) -> int:
-    counter = 0
-    for i in text:
-        if i in letters_to_find_1:
-            counter += 1 
-    return counter
+# def count_digits(filename: int) -> list:
+#     with open(filename) as f:
+#         return f.readlines()
 
-def count_consonants(text: str) -> int:
-    counter = 0
-    for i in text:
-        if i in letters_to_find_2:
-            counter += 1 
-    return counter
+# def count_consonants(text: str) -> int:
+#     counter = 0
+#     for i in text:
+#         if i in letters_to_find_2:
+#             counter += 1 
+#     return counter
     
-file1_lines = get_file_lines(file_1)
-file2_lines = get_file_lines(file_2)
+# file1_lines = get_file_lines(file_1)
+# file2_lines = get_file_lines(file_2)
 
-file1_chars = "".join(file1_lines)
-file2_chars = "".join(file2_lines)
+# file1_chars = "".join(file1_lines)
+# file2_chars = "".join(file2_lines)
 
-file1_vowels = count_vowels(file1_chars)
-file2_vowels = count_vowels(file2_chars)
+# file1_vowels = count_vowels(file1_chars)
+# file2_vowels = count_vowels(file2_chars)
 
-file1_consonants = count_consonants(file1_chars)
-file2_consonants = count_consonants(file2_chars)
+# file1_consonants = count_consonants(file1_chars)
+# file2_consonants = count_consonants(file2_chars)
 
-print("file1_vowels:", file1_vowels)
-print("file2_vowels:", file2_vowels)
-print("file2_consonants:", file1_consonants)
-print("file2_consonants:", file2_consonants)
+# file1_digits = count_digits(file1_chars)
+# file2_digits = count_digits(file2_chars)
+
+# print("file1_vowels:", file1_vowels)
+# print("file2_vowels:", file2_vowels)
+# print("file2_consonants:", file1_consonants)
+# print("file2_consonants:", file2_consonants)
+# print("file1_digits:", file1_digits)
+# print("file2_digits:", file2_digits)
 # 
 # 
 # 
@@ -84,6 +91,15 @@ print("file2_consonants:", file2_consonants)
 # 
 #################   Task 3   ################# 
 # Дан текстовый файл. Удалить из него последнюю строку. Результат записать в другой файл.
+# 
+# 
+with open("text1.txt", mode = "r", encoding="utf-8") as f:
+    text = f.readlines()
+text.remove(text[-1])
+
+with open("text5.txt", mode = "a", encoding="utf-8") as file:
+    for i in text:
+        file.write(f"{i}")
 
 
 #################   Task 4   ################# 
