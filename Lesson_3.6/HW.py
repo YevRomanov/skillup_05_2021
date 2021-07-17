@@ -93,13 +93,14 @@ stream_2.close()
 # Дан текстовый файл. Удалить из него последнюю строку. Результат записать в другой файл.
 # 
 # 
-with open("text1.txt", mode = "r", encoding="utf-8") as f:
+with open("Lesson_3.6/text3.txt", mode = "r", encoding="utf-8") as f:
     text = f.readlines()
 text.remove(text[-1])
 
-with open("text5.txt", mode = "a", encoding="utf-8") as file:
+with open("Lesson_3.6/text5.txt", mode = "a", encoding="utf-8") as file:
     for i in text:
         file.write(f"{i}")
+
 
 
 #################   Task 4   ################# 
