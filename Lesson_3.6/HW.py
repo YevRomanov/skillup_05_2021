@@ -110,14 +110,14 @@ with open("Lesson_3.6/text5.txt", mode = "a", encoding="utf-8") as file:
 # Дан текстовый файл. Найти длину самой длинной строки.#
 # 
 # 
-with open("Lesson_3.6/text1.txt", mode = "a", encoding="utf-8") as f:
-    text = f.readlines()
+# with open("Lesson_3.6/text1.txt", mode = "a", encoding="utf-8") as f:
+#     text = f.readlines()
 
-for i in text:
-    max_l = 0
-    if len(i) > max_l:
-        max_l = len(i)
-        print(max_l)
+# for i in text:
+#     max_l = 0
+#     if len(i) > max_l:
+#         max_l = len(i)
+#         print(max_l)
 # 
 # 
 # 
@@ -127,4 +127,12 @@ for i in text:
 # Дан текстовый файл. Посчитать сколько раз в нем встречается заданное пользователем слово.#
 # 
 # 
-with open("Lesson_3.6/text1.txt", mode = "a", encoding="utf-8") as f:
+file = open("Lesson_3.6/text6.txt", mode = "r", encoding="utf-8")
+print(file)
+    
+
+# find_word = input()
+
+# for i in find_word:
+#     if i in text:
+#         print(i)
