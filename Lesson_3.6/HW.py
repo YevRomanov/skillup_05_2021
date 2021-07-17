@@ -133,10 +133,6 @@ list_file = [line.strip() for line in file]
 count_user_word = list_file.count(find_word)
 print('Number of user word in file:', count_user_word)  # количество вхождений пользовательского слова
 file.close()
-    
+# 
+# 
 
-# find_word = input()
-
-# for i in find_word:
-#     if i in text:
-#         print(i)
